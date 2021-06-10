@@ -1,0 +1,429 @@
+/*
+218990
+083b66
+*/
+
+.webchat__basic-transcript__focus-indicator {
+    display: none;
+}
+
+.webchat__basic-transcript__activity-indicator--focus {
+    display: none; 
+}
+
+#hchat-webchat {
+    width: 100%;
+    height: 100%;
+}
+
+#hchat-webchat > [class*='webchat--css-'] {
+    background-color: #FFFFFF;
+}
+
+#hchat-ChatContainer {
+    /*width: 100px;*/
+    bottom: 100px;
+    width: 25%;
+    height: 70%;
+    right: 0px;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0px 2%; 
+
+}
+
+#hchat-chatButton {
+    background-color: transparent;
+    vertical-align: bottom;
+    margin: 0%;
+    z-index: 1;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: hidden;
+}
+
+#imageChatButtonContainer {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 3px 6px grey;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#imageChatButton {
+    /*border-radius: 50%;*/
+    width: 70px;
+    height: 70px;
+    margin: -5px;
+    background-size: 50px !important;
+
+}
+
+#imageChatButton:hover {
+    background: url('images/logo1.png') center no-repeat !important;
+    background-size: 54px !important;
+    /*content: url("images/logo_bot2.svg");*/
+}
+
+
+#imageChatButtonContainer:hover #imageChatButton {
+    background: url('images/logo1.png') center no-repeat !important;
+    background-size: 54px !important;
+}
+
+#imageChatButtonContainer {
+    background-color: #fff;
+}
+
+#imageChatButtonContainer:hover {
+    background-color: #00AFEC;
+}
+
+#hchat-closeChatButton {
+    background-color: transparent;
+    font-size: 50%;
+    color: black;
+    z-index: 1;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: hidden;
+}
+
+#closeImageButton {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 3px 6px grey;
+}
+
+.hchat-appearFromButton {
+    animation-name: hchat-appearFromButton;
+    animation-duration: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#popover {
+    height: 56px;
+    width: 140px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 15px;
+    right: 100px;
+}
+
+#popover > div {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Raleway';
+    padding-left: 10px;
+    position: relative;
+}
+
+#pop {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#pop2 {
+    font-weight: normal;
+}
+
+.pointe {
+    background-color: #00AFEC;
+    margin: 0 auto;
+    transform: rotate( 140deg );
+    border-radius: 0 5px 0;
+    position: relative;
+    right: -70px;
+    width: 1px;
+    height: 10px;
+    bottom: 15px;
+}
+
+/*--------------- bulles conversation -----------------*/
+
+.webchat__basic-transcript__scrollable[class*='react-scroll-to-bottom--css'] {
+    margin-top: 70px;
+}
+
+
+.webchat__bubble.webchat__bubble.webchat__bubble--from-user.webchat__stacked-layout__message .webchat__bubble__content { /*user*/
+    background: #218990;
+    border-color: #218990;
+    border-radius: 26px;
+}
+
+div.webchat__bubble:not(.webchat__bubble--from-user).webchat__stacked-layout__message div.webchat__bubble__content { /*bot*/
+    background: rgba(8, 59, 102, 0.7);
+    border-color: rgba(8, 59, 102, 0.7);
+    border-radius: 20px;
+
+}
+
+.webchat__stacked-layout__status [class*='webchat--css-'] { /*heure*/
+    font-family: 'Roboto';
+    font-size: 9px;
+    font-weight: normal;
+    color: #858688;
+}
+
+.webchat__bubble__content [class*='webchat--css-'] { /*les deux*/
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.webchat__bubble.webchat__bubble.webchat__bubble--from-user.webchat__stacked-layout__message .webchat__bubble__content [class*='webchat--css-'] { /*user*/
+    color: #FFFFFF;
+}
+
+.webchat__bubble__content > p {
+    margin: 0px 5px !important;
+}
+
+div.webchat__bubble:not(.webchat__bubble--from-user).webchat__stacked-layout__message .webchat__bubble__content [class*='webchat--css-'] { /*bot*/
+    color: #fff;
+}
+
+[class*='webchat--css'].webchat__defaultAvatar {
+    box-shadow: 0px 3px 6px grey;
+}
+
+div.webchat__imageAvatar__image > img {
+    height: 33px;
+    width: 33px;
+}
+
+div.webchat__imageAvatar__image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/*-----------------------en tete------------------*/
+div.webchat--css-ycvxn-1tdc372.webchat__basic-transcript {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    position: relative;
+}
+
+[id*='webchat__basic-transcript__label--'][class*='webchat--css-'] {
+    background-color: #218990;
+    height: 70px;
+    overflow: visible;
+    position: absolute;
+    top: 0px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#iconeHeader {
+    width: 39px;
+    height: 39px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: white;
+    /*width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    box-shadow: 0px 3px 6px grey;*/
+}
+
+#iconeHeaderContainer {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    box-shadow: 0px 3px 6px grey;
+}
+
+#texteHeader {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+
+.webchat__basic-transcript__activity--from-user .webchat__imageAvatar__image {
+    background-color: #07364C;
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+
+/*------------------------send box----------------------------*/
+
+.webchat__send-box form.webchat__send-box-text-box.webchat__send-box__text-box {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.webchat__send-box-text-box.webchat__send-box__text-box {
+    background: rgba(33, 137, 144, 0.3);
+    border-radius: 6px;
+    /*box-shadow: 0px 4px 8px grey;*/
+    height: 40px;
+    margin: 10px;
+
+}
+
+.webchat__send-box__main [class*='webchat--css'][class*='webchat--css'].webchat__send-box-text-box.webchat__send-box__text-box input.webchat__send-box-text-box__input {
+    background-color: transparent;
+    color: #858688;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+#icone_envoi {
+    transform: rotate(-45deg);
+}
+
+#icone_envoi:hover {
+        filter: saturate(200%);
+    }
+/*------------------------send box----------------------------*/
+
+div.react-film__main > div.react-film__filmstrip > ul.react-film__filmstrip__list {
+    display: list-item;
+    padding: 5px;
+}
+
+li.react-film__filmstrip__item > div.webchat__suggested-action.webchat__suggested-actions__button[class*=" webchat--css-"] > button.webchat__suggested-action__button {
+    border-radius: 26px;
+    border-color: #00AFEC;
+    height: auto;
+    width: auto;
+
+}
+
+li.react-film__filmstrip__item > div.webchat__suggested-action.webchat__suggested-actions__button > .webchat__suggested-action__button > span {
+    color: #00AFEC;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.react-film__filmstrip__item {
+    padding-left: 5px !important;
+    display: inline-flex;
+}
+
+.webchat__suggested-action__button {
+    width: 70px !important;
+}
+
+/*------------------------*/
+button {
+    outline: none;
+}
+
+@keyframes hchat-buttonJump {
+    0% {
+    bottom: 0px;
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*box-shadow: 3px 3px;*/
+  }
+
+  100% {
+    bottom: 0px;
+    /*width: 150px;*/
+    /*height: 150px;*/
+    /*box-shadow: 6px 6px;*/
+  }
+}
+
+/*
+@keyframes hchat-appearFromButton {
+  0% {
+    bottom: 100px;
+    right: 100px;
+    width: 0px;
+    height: 0px;
+  }
+
+  0% {
+    margin: 0px 5%;
+    right: 0px;
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  100% {
+    bottom: 100px;
+    min-width: 375px;
+    width: 25%;
+    height: 70%;
+  }
+
+}
+*/
+
+
+/*
+@keyframes hchat-desappearFromButton {
+  0% {
+    bottom: 100px;
+    width: 25%;
+    height: 60%;
+  }
+
+  100% {
+    bottom: 100px;
+    margin: 0px 5%;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index:0;
+  }
+
+}
+*/
+
+/*----------------*/
+
+@media (max-width: 600px) {
+
+    #hchat-ChatContainer {
+        width: 96%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+
+    #hchat-ChatContainer {
+        width: 66%;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 900px) {
+
+    #hchat-ChatContainer {
+        width: 50%;
+    }
+}
